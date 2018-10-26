@@ -28,6 +28,7 @@ done
 
 ###After the preprocessing steps, run copycat R codes.
 
+
 cat case_list.txt | sort -u -o case_list.txt
 source activate copycat
 
@@ -59,3 +60,5 @@ done
 cat CPTAC3.b1.CCRCC.WGS.copyCat.commands.txt | parallel -j 6 {} 
 #The last step need to be modified so that the second-part commands will not start to run unless the preprocessing steps are done.
 #for parallel, refer to this script `/diskmnt/Projects/CPTAC3CNV/gatk4wxscnv/gatk4wxscnv.b2/collecthsmetrics.sh`, basically remove the & in the commands.txt and add a & at the end of parallel command
+
+#test
